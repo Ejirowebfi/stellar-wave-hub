@@ -87,7 +87,7 @@ Replace `YOUR_GITHUB_USERNAME`, `Your Name`, `YOUR_X_HANDLE`, and the role/proje
   <a href="https://github.com/Uche44"><img src="https://img.shields.io/badge/-GitHub-181717?logo=github&logoColor=white&style=flat-square" alt="GitHub" /></a>
   <a href="https://x.com/samabornoking"><img src="https://img.shields.io/badge/-X-000000?logo=x&logoColor=white&style=flat-square" alt="X" /></a>
   <br />
-  <sub>Researcher — PetChain, CurrentDao</sub>
+  <sub>Researcher — PetChain, CurrentDao, Stellar Tipjar</sub>
 </div>
 <!-- Add your <div> above this line -->
 
