@@ -86,6 +86,34 @@ Replace `YOUR_GITHUB_USERNAME`, `Your Name`, `YOUR_X_HANDLE`, and the role/proje
 	<div
 		style="display:inline-block;width:130px;vertical-align:top;text-align:center;margin:8px"
 	>
+		<a href="https://github.com/Godfr3y">
+			<img
+				src="https://github.com/Godfr3y.png"
+				width="80"
+				style="border-radius:50%"
+				alt="Godfr3y"
+			/>
+			<br />
+			<sub><b>Godfrey-Delight</b></sub>
+		</a>
+		<br />
+		<a href="https://github.com/Godfr3y"
+			><img
+				src="https://img.shields.io/badge/-GitHub-181717?logo=github&logoColor=white&style=flat-square"
+				alt="GitHub"
+		/></a>
+		<a href="https://x.com/0xgodfreyy"
+			><img
+				src="https://img.shields.io/badge/-X-000000?logo=x&logoColor=white&style=flat-square"
+				alt="X"
+		/></a>
+		<br />
+		<sub>Contributor</sub>
+	</div>
+
+	<div
+		style="display:inline-block;width:130px;vertical-align:top;text-align:center;margin:8px"
+	>
 		<a href="https://github.com/codewithzubair07">
 			<img
 				src="https://github.com/codewithzubair07.png"
