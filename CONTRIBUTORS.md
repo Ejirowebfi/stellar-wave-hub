@@ -259,6 +259,29 @@ Replace `YOUR_GITHUB_USERNAME`, `Your Name`, `YOUR_X_HANDLE`, and the role/proje
 		<sub>Researcher — KindFi</sub>
 	</div>
 
+		<div
+		style="display:inline-block;width:130px;vertical-align:top;text-align:center;margin:8px"
+	>
+		<a href="https://github.com/your-github-username">
+			<img
+				src="https://github.com/your-github-username.png"
+				width="80"
+				style="border-radius:50%"
+				alt="Your Name"
+			/>
+			<br />
+			<sub><b>Your Name</b></sub>
+		</a>
+		<br />
+		<a href="https://github.com/your-github-username"
+			><img
+				src="https://img.shields.io/badge/-GitHub-181717?logo=github&logoColor=white&style=flat-square"
+				alt="GitHub"
+		/></a>
+		<br />
+		<sub>Researcher - DAMREV RWA Tokenization</sub>
+	</div>
+
 	<!-- Add your <div> above this line -->
 </div>
 <!-- CONTRIBUTORS-END -->
@@ -270,3 +293,4 @@ Replace `YOUR_GITHUB_USERNAME`, `Your Name`, `YOUR_X_HANDLE`, and the role/proje
 - **Reviewer** — Rated and reviewed submitted projects
 - **Developer** — Contributed code to the platform
 - **Maintainer** — Core team maintaining the project
+
