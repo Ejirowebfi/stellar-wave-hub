@@ -185,19 +185,33 @@ Replace `YOUR_GITHUB_USERNAME`, `Your Name`, `YOUR_X_HANDLE`, and the role/proje
 		<sub>Researcher — Tansu Soroban Wave</sub>
 	</div>
 
-<div style="display:inline-block;width:130px;vertical-align:top;text-align:center;margin:8px">
-  <a href="https://github.com/Uche44">
-    <img src="https://github.com/Uche44.png" width="80" style="border-radius:50%" alt="Uche44" />
-    <br />
-    <sub><b>Perpetual Asogwa</b></sub>
-  </a>
-  <br />
-  <a href="https://github.com/Uche44"><img src="https://img.shields.io/badge/-GitHub-181717?logo=github&logoColor=white&style=flat-square" alt="GitHub" /></a>
-  <a href="https://x.com/samabornoking"><img src="https://img.shields.io/badge/-X-000000?logo=x&logoColor=white&style=flat-square" alt="X" /></a>
-  <br />
-  <sub>Researcher — PetChain, CurrentDao, Stellar Tipjar</sub>
-</div>
-<!-- Add your <div> above this line -->
+	<div
+		style="display:inline-block;width:130px;vertical-align:top;text-align:center;margin:8px"
+	>
+		<a href="https://github.com/Uche44">
+			<img
+				src="https://github.com/Uche44.png"
+				width="80"
+				style="border-radius:50%"
+				alt="Uche44"
+			/>
+			<br />
+			<sub><b>Perpetual Asogwa</b></sub>
+		</a>
+		<br />
+		<a href="https://github.com/Uche44"
+			><img
+				src="https://img.shields.io/badge/-GitHub-181717?logo=github&logoColor=white&style=flat-square"
+				alt="GitHub"
+		/></a>
+		<a href="https://x.com/samabornoking"
+			><img
+				src="https://img.shields.io/badge/-X-000000?logo=x&logoColor=white&style=flat-square"
+				alt="X"
+		/></a>
+		<br />
+		<sub>Researcher — PetChain, CurrentDao, Stellar Tipjar</sub>
+	</div>
 
 	<div
 		style="display:inline-block;width:130px;vertical-align:top;text-align:center;margin:8px"
@@ -241,7 +255,11 @@ Replace `YOUR_GITHUB_USERNAME`, `Your Name`, `YOUR_X_HANDLE`, and the role/proje
 			<sub><b>ATHCornerstone</b></sub>
 		</a>
 		<br />
-		<a href="https://github.com/fredericklamar342-prog"><img src="https://img.shields.io/badge/-GitHub-181717?logo=github&logoColor=white&style=flat-square" alt="GitHub" /></a>
+		<a href="https://github.com/fredericklamar342-prog"
+			><img
+				src="https://img.shields.io/badge/-GitHub-181717?logo=github&logoColor=white&style=flat-square"
+				alt="GitHub"
+		/></a>
 		<br />
 		<sub>Researcher — BeEnergy, Trustless Work, KindFi</sub>
 	</div>
@@ -269,54 +287,25 @@ Replace `YOUR_GITHUB_USERNAME`, `Your Name`, `YOUR_X_HANDLE`, and the role/proje
 		<sub>Researcher — KindFi</sub>
 	</div>
 
-		<div
-		style="display:inline-block;width:130px;vertical-align:top;text-align:center;margin:8px"
-	>
-		<a href="https://github.com/your-github-username">
-			<img
-				src="https://github.com/your-github-username.png"
-				width="80"
-				style="border-radius:50%"
-				alt="Your Name"
-			/>
-			<br />
-			<sub><b>Your Name</b></sub>
-		</a>
-		<br />
-		<a href="https://github.com/your-github-username"
 	<div
 		style="display:inline-block;width:130px;vertical-align:top;text-align:center;margin:8px"
 	>
-		<a href="https://github.com/victor-134">
+		<a href="https://github.com/Groq">
 			<img
-				src="https://github.com/victor-134.png"
+				src="https://github.com/Groq.png"
 				width="80"
 				style="border-radius:50%"
-				alt="victor-134"
+				alt="Groq Assistant"
 			/>
-			<br />
-			<sub><b>victor-134</b></sub>
-		</a>
-		<br />
-		<a href="https://github.com/victor-134"
-			><img
-				src="https://img.shields.io/badge/-GitHub-181717?logo=github&logoColor=white&style=flat-square"
-				alt="GitHub"
-		/></a>
-		<br />
-		<sub>Researcher - DAMREV RWA Tokenization</sub>
-		<sub>Researcher — Trustless Work, PropChain</sub>
-	</div>
-
-	<div style="display:inline-block;width:130px;vertical-align:top;text-align:center;margin:8px">
-		<a href="https://github.com/Groq">
-			<img src="https://github.com/Groq.png" width="80" style="border-radius:50%" alt="Groq Assistant" />
 			<br />
 			<sub><b>Groq Assistant</b></sub>
 		</a>
 		<br />
 		<a href="https://github.com/Groq">
-			<img src="https://img.shields.io/badge/-GitHub-181717?logo=github&logoColor=white&style=flat-square" alt="GitHub" />
+			<img
+				src="https://img.shields.io/badge/-GitHub-181717?logo=github&logoColor=white&style=flat-square"
+				alt="GitHub"
+			/>
 		</a>
 		<br />
 		<sub>Researcher — Lumenswap</sub>
@@ -344,31 +333,33 @@ Replace `YOUR_GITHUB_USERNAME`, `Your Name`, `YOUR_X_HANDLE`, and the role/proje
 		<br />
 		<sub>Researcher - Wraith</sub>
 	</div>
-	<div style="display:inline-block;width:130px;vertical-align:top;text-align:center;margin:8px">
-  <a href="https://github.com/Chidubemkingsley">
-    <img
-      src="https://github.com/Chidubemkingsley.png"
-      width="80"
-      style="border-radius:50%"
-      alt="Chidubem Kingsley Rubeluchukwuisi"
-    />
-    <br />
-    <sub><b>Chidubem Kingsley</b></sub>
-  </a>
-  <br />
-  <a href="https://github.com/Chidubemkingsley"
-    ><img
-      src="https://img.shields.io/badge/-GitHub-181717?logo=github&logoColor=white&style=flat-square"
-      alt="GitHub"
-  /></a>
-  <a href="https://x.com/KingsleyCaesar1"
-    ><img
-      src="https://img.shields.io/badge/-X-000000?logo=x&logoColor=white&style=flat-square"
-      alt="X"
-  /></a>
-  <br />
-  <sub>Researcher — Stellopay</sub>
-</div>
+	<div
+		style="display:inline-block;width:130px;vertical-align:top;text-align:center;margin:8px"
+	>
+		<a href="https://github.com/Chidubemkingsley">
+			<img
+				src="https://github.com/Chidubemkingsley.png"
+				width="80"
+				style="border-radius:50%"
+				alt="Chidubem Kingsley Rubeluchukwuisi"
+			/>
+			<br />
+			<sub><b>Chidubem Kingsley</b></sub>
+		</a>
+		<br />
+		<a href="https://github.com/Chidubemkingsley"
+			><img
+				src="https://img.shields.io/badge/-GitHub-181717?logo=github&logoColor=white&style=flat-square"
+				alt="GitHub"
+		/></a>
+		<a href="https://x.com/KingsleyCaesar1"
+			><img
+				src="https://img.shields.io/badge/-X-000000?logo=x&logoColor=white&style=flat-square"
+				alt="X"
+		/></a>
+		<br />
+		<sub>Researcher — Stellopay</sub>
+	</div>
 
 	<div
 		style="display:inline-block;width:130px;vertical-align:top;text-align:center;margin:8px"
@@ -388,9 +379,9 @@ Replace `YOUR_GITHUB_USERNAME`, `Your Name`, `YOUR_X_HANDLE`, and the role/proje
 			><img
 				src="https://img.shields.io/badge/-GitHub-181717?logo=github&logoColor=white&style=flat-square"
 				alt="GitHub"
-			/></a>
+		/></a>
 		<br />
-		<sub>Researcher — Routedock</sub>
+		<sub>Researcher — Routedock, Stellar Portfolio Rebalancer</sub>
 	</div>
 
 	<div
@@ -423,41 +414,8 @@ Replace `YOUR_GITHUB_USERNAME`, `Your Name`, `YOUR_X_HANDLE`, and the role/proje
 
 	<!-- Add your <div> above this line -->
 </div>
-<!-- CONTRIBUTORS-START -->
-<table>
-  <tr>
-    <td align="center">
-      <a href="https://github.com/samieazubike">
-        <img src="https://github.com/samieazubike.png" width="80" alt="samieazubike" style="border-radius:50%" />
-        <br />
-        <sub><b>samieazubike</b></sub>
-      </a>
-      <br />
-      <a href="https://github.com/samieazubike"><img src="https://img.shields.io/badge/-GitHub-181717?logo=github&logoColor=white&style=flat-square" alt="GitHub" /></a>
-      <a href="https://x.com/samabornoking"><img src="https://img.shields.io/badge/-X-000000?logo=x&logoColor=white&style=flat-square" alt="X" /></a>
-      <br />
-      <sub>Maintainer — Project creator</sub>
-    </td>
-    <td align="center">
-      <a href="https://github.com/Chigybillionz">
-        <img src="https://github.com/Chigybillionz.png" width="80" alt="Okorie Chigozie Jehoshaphat" style="border-radius:50%" />
-        <br />
-        <sub><b>Okorie Chigozie Jehoshaphat</b></sub>
-      </a>
-      <br />
-      <a href="https://github.com/Chigybillionz"><img src="https://img.shields.io/badge/-GitHub-181717?logo=github&logoColor=white&style=flat-square" alt="GitHub" /></a>
-      <a href="https://x.com/ChigoziOkorie"><img src="https://img.shields.io/badge/-X-000000?logo=x&logoColor=white&style=flat-square" alt="X" /></a>
-      <br />
-      <sub>Developer &mdash; Added contributor profile</sub>
-    </td>
-    <!-- Add your <td> above this line -->
-  </tr>
-</table>
+```
 <!-- CONTRIBUTORS-END -->
 
-## Roles
 
-- **Researcher** — Researched and uploaded Stellar Wave project profiles
-- **Reviewer** — Rated and reviewed submitted projects
-- **Developer** — Contributed code to the platform
-- **Maintainer** — Core team maintaining the project
+
