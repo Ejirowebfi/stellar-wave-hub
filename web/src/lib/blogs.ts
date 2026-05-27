@@ -47,6 +47,18 @@ export const blogs: BlogPost[] = [
 				text:
 					"This guide walks you through the exact flow we use ourselves: open Drips, find a project worth writing up, validate it against the submission criteria, then push it through to the Hub for review.",
 			},
+			{
+				type: "callout",
+				tone: "solar",
+				title: "⚠ Important: check for duplicates first",
+				text:
+					"Before you start researching a project you've picked, search for it on Stellar Wave Hub to confirm it hasn't already been submitted. Duplicate submissions get rejected at review and you'll have wasted the work — a 30-second search saves you an evening of writing.",
+			},
+			{
+				type: "link-button",
+				href: "/explore",
+				label: "Search the Hub for your project →",
+			},
 		],
 		steps: [
 			{
@@ -77,7 +89,7 @@ export const blogs: BlogPost[] = [
 					},
 					{
 						type: "image",
-						src: "/blog/drips-stellar-orgs.png",
+						src: "/blog/drips-stellar-orgs-repos.png",
 						alt: "Drips Wave page showing the Orgs view filtered to Stellar",
 						caption: "The Orgs view: a paginated grid of every team approved for the Stellar Wave Program.",
 					},

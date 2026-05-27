@@ -23,7 +23,7 @@ function formatDate(iso: string) {
 
 const calloutToneClass: Record<string, string> = {
 	nova: "border-nova/30 bg-nova/5 text-moonlight",
-	solar: "border-solar/30 bg-solar/5 text-moonlight",
+	solar: "border-solar/50 bg-solar/10 text-moonlight",
 	aurora: "border-aurora/30 bg-aurora/5 text-moonlight",
 	plasma: "border-plasma/30 bg-plasma/5 text-moonlight",
 };
@@ -100,16 +100,18 @@ function Block({block}: {block: BlogBlock}) {
 			const tone = block.tone ?? "nova";
 			return (
 				<div
-					className={`rounded-2xl border p-5 my-6 ${calloutToneClass[tone]}`}
+					className={`rounded-2xl border-2 p-5 sm:p-6 my-6 ${calloutToneClass[tone]}`}
 				>
 					{block.title && (
 						<p
-							className={`font-semibold mb-1.5 ${calloutTitleToneClass[tone]}`}
+							className={`font-bold text-base sm:text-lg mb-2 ${calloutTitleToneClass[tone]}`}
 						>
 							{block.title}
 						</p>
 					)}
-					<p className="text-moonlight/90 leading-relaxed">{block.text}</p>
+					<p className="text-moonlight font-medium leading-relaxed">
+						{block.text}
+					</p>
 				</div>
 			);
 		}
