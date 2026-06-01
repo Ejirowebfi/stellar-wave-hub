@@ -430,15 +430,15 @@ Replace `YOUR_GITHUB_USERNAME`, `Your Name`, `YOUR_X_HANDLE`, and the role/proje
 	<div
 	style="display:inline-block;width:130px;vertical-align:top;text-align:center;margin:8px"
 >
-		<a href="https://github.com/YOUR_GITHUB_USERNAME">
+		<a href="https://github.com/Bright-Tekch">
 			<img
-				src="https://github.com/YOUR_GITHUB_USERNAME.png"
+				src="https://github.com/Bright-Tekch.png"
 				width="80"
 				style="border-radius:50%"
-				alt="Your Name"
+				alt="Bright-Tekch"
 			/>
 			<br />
-			<sub><b>Your Name</b></sub>
+			<sub><b>Bright-Tekch</b></sub>
 		</a>
 		<br />
 		<a href="https://github.com/Bright-Tekch"
@@ -452,7 +452,7 @@ Replace `YOUR_GITHUB_USERNAME`, `Your Name`, `YOUR_X_HANDLE`, and the role/proje
 				alt="X"
 		/></a> -->
 		<br />
-		<sub>Researcher — StellarMicroPay</sub>
+		<sub>Researcher — StellarMicroPay, Linkora-social</sub>
 	</div>
 
     <div
