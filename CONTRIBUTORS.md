@@ -487,15 +487,15 @@ Replace `YOUR_GITHUB_USERNAME`, `Your Name`, `YOUR_X_HANDLE`, and the role/proje
     <div
 	style="display:inline-block;width:130px;vertical-align:top;text-align:center;margin:8px"
 >
-	<a href="https://github.com/YOUR_GITHUB_USERNAME">
+	<a href="https://github.com/Buchi-Einstein">
 		<img
-			src="https://github.com/YOUR_GITHUB_USERNAME.png"
+			src="https://github.com/Buchi-Einstein.png"
 			width="80"
 			style="border-radius:50%"
-			alt="John-Flint"
+			alt="Buchi-Einstein"
 		/>
 		<br />
-		<sub><b>John-Flint</b></sub>
+		<sub><b>Buchi-Einstein</b></sub>
 	</a>
 	<br />
 	<a href="https://github.com/Buchi-Einstein"
@@ -509,7 +509,7 @@ Replace `YOUR_GITHUB_USERNAME`, `Your Name`, `YOUR_X_HANDLE`, and the role/proje
 			alt="X"
 	/></a>
 	<br />
-	<sub>Researcher — Stellar-Search, Vestroll</sub>
+	<sub>Researcher — Vestroll, Stellar-Search</sub>
 </div>
 	<!--Enemuo-Debug-->
 	<div
