@@ -475,11 +475,6 @@ Replace `YOUR_GITHUB_USERNAME`, `Your Name`, `YOUR_X_HANDLE`, and the role/proje
 				src="https://avatars.githubusercontent.com/u/174682562?v=4"
 				alt="GitHub"
 		/></a>
-		<!-- <a href="https://x.com/YOUR_X_HANDLE"
-			><img
-				src="https://img.shields.io/badge/-X-000000?logo=x&logoColor=white&style=flat-square"
-				alt="X"
-		/></a> -->
 		<br />
 		<sub>Researcher — StellarMicroPay, Linkora-social, Lancepay, MettaVerse</sub>
 	</div>
@@ -520,10 +515,10 @@ Replace `YOUR_GITHUB_USERNAME`, `Your Name`, `YOUR_X_HANDLE`, and the role/proje
 				src="https://github.com/Enemuo-debug.png"
 				width="80"
 				style="border-radius:50%"
-				alt="Your Name"
+				alt="Enemuo"
 			/>
 			<br />
-			<sub><b>Your Name</b></sub>
+			<sub><b>Enemuo</b></sub>
 		</a>
 		<br />
 		<a href="https://github.com/Enemuo-debug"
