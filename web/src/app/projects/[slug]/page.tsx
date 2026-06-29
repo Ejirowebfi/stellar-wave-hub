@@ -26,6 +26,7 @@ interface Project {
 	stellar_account_id?: string;
 	stellar_contract_id?: string;
 	stellar_network?: string;
+	owner_verified?: boolean;
 	tags?: string;
 	website_url?: string;
 	github_url?: string;
@@ -87,6 +88,21 @@ function StellarAddressLink({address, type, network}: {address: string; type: "a
 	);
 }
 
+function VerifiedBadge() {
+	return (
+		<span
+			className="tag tag-aurora inline-flex items-center gap-1.5"
+			title="Owner proved control of the project's Stellar account by signing a challenge"
+		>
+			<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="shrink-0">
+				<path d="M9 12l2 2 4-4" />
+				<path d="M12 3l7.5 4v5c0 4.5-3 8-7.5 9-4.5-1-7.5-4.5-7.5-9V7L12 3z" />
+			</svg>
+			Verified
+		</span>
+	);
+}
+
 /** Format a raw i128 stroop amount as a human-readable token string (6 dp). */
 function formatFee(stroops: bigint | null): string {
 	if (stroops === null) return "0.1 USDC";
@@ -129,6 +145,65 @@ export default function ProjectDetailPage({
 	const [ratingMsg, setRatingMsg] = useState("");
 	const [ratingStep, setRatingStep] = useState<"idle" | "onchain" | "saving">("idle");
 	const [lastTxHash, setLastTxHash] = useState<string | null>(null);
+
+	// Owner verification
+	const [verifying, setVerifying] = useState(false);
+	const [verifyMsg, setVerifyMsg] = useState("");
+
+	async function handleVerifyOwnership() {
+		if (!project || !project.stellar_account_id || !token) return;
+		setVerifying(true);
+		setVerifyMsg("");
+		try {
+			const { isConnected, requestAccess, getAddress, signTransaction } =
+				await import("@stellar/freighter-api");
+
+			const connResult = await isConnected();
+			if (connResult.error || !connResult.isConnected) {
+				throw new Error("Freighter wallet not found. Please install the Freighter extension.");
+			}
+
+			const accessResult = await requestAccess();
+			if (accessResult.error) throw new Error(accessResult.error.message || "Wallet access denied.");
+
+			const addrResult = await getAddress();
+			if (addrResult.error || !addrResult.address) throw new Error("Could not retrieve public key from wallet.");
+
+			if (addrResult.address !== project.stellar_account_id) {
+				throw new Error("Connected wallet does not match the project's Stellar account.");
+			}
+
+			// Reuse the auth challenge issuance for this account
+			const challengeRes = await fetch(`/api/auth/challenge?publicKey=${project.stellar_account_id}`);
+			const challengeData = await challengeRes.json();
+			if (!challengeRes.ok) throw new Error(challengeData.error || "Failed to get challenge");
+
+			const signResult = await signTransaction(challengeData.challengeXdr, {
+				networkPassphrase: challengeData.networkPassphrase,
+			});
+			if (signResult.error || !signResult.signedTxXdr) {
+				throw new Error("Failed to sign challenge with wallet.");
+			}
+
+			const res = await fetch(`/api/projects/${project.id}/verify-owner`, {
+				method: "POST",
+				headers: {
+					"Content-Type": "application/json",
+					Authorization: `Bearer ${token}`,
+				},
+				body: JSON.stringify({ signedXdr: signResult.signedTxXdr }),
+			});
+			const data = await res.json();
+			if (!res.ok) throw new Error(data.error || "Verification failed");
+
+			setProject((p) => (p ? { ...p, owner_verified: true } : p));
+			setVerifyMsg("Ownership verified!");
+		} catch (err) {
+			setVerifyMsg(err instanceof Error ? err.message : "Verification failed");
+		} finally {
+			setVerifying(false);
+		}
+	}
 
 	useEffect(() => {
 		fetch(`/api/projects/${slug}`)
@@ -295,6 +370,7 @@ export default function ProjectDetailPage({
 									Featured
 								</span>
 							)}
+							{project.owner_verified && <VerifiedBadge />}
 						</div>
 						<div className="flex items-center gap-3 mt-2 text-sm text-ash">
 							<span>by {project.username}</span>
@@ -503,6 +579,29 @@ export default function ProjectDetailPage({
 													<line x1="10" y1="14" x2="21" y2="3" />
 												</svg>
 											</a>
+											{/* Ownership verification */}
+											<div className="mt-3 flex items-center gap-3 flex-wrap">
+												{project.owner_verified ? (
+													<VerifiedBadge />
+												) : (
+													user &&
+													user.id === project.user_id && (
+														<button
+															onClick={handleVerifyOwnership}
+															disabled={verifying}
+															className="btn-ghost text-sm !py-1.5 inline-flex items-center gap-1.5 disabled:opacity-50"
+														>
+															<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+																<path d="M12 3l7.5 4v5c0 4.5-3 8-7.5 9-4.5-1-7.5-4.5-7.5-9V7L12 3z" />
+															</svg>
+															{verifying ? "Verifying…" : "Verify ownership"}
+														</button>
+													)
+												)}
+												{verifyMsg && (
+													<span className="text-xs text-ash">{verifyMsg}</span>
+												)}
+											</div>
 										</div>
 									)}
 									{project.stellar_contract_id && (

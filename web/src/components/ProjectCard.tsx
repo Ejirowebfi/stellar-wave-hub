@@ -16,6 +16,7 @@ interface ProjectCardProps {
     rating_count?: number;
     username?: string;
     logo_url?: string;
+    owner_verified?: boolean;
   };
   index?: number;
 }
@@ -63,9 +64,23 @@ export default function ProjectCard({ project, index = 0 }: ProjectCardProps) {
           {project.name[0]}
         </div>
         <div className="min-w-0 flex-1">
-          <h3 className="font-semibold text-starlight group-hover:text-nova-bright transition-colors truncate">
-            {project.name}
-          </h3>
+          <div className="flex items-center gap-1.5 min-w-0">
+            <h3 className="font-semibold text-starlight group-hover:text-nova-bright transition-colors truncate">
+              {project.name}
+            </h3>
+            {project.owner_verified && (
+              <span
+                className="shrink-0 text-aurora-bright"
+                title="Verified owner"
+                aria-label="Verified owner"
+              >
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                  <path d="M9 12l2 2 4-4" />
+                  <path d="M12 3l7.5 4v5c0 4.5-3 8-7.5 9-4.5-1-7.5-4.5-7.5-9V7L12 3z" />
+                </svg>
+              </span>
+            )}
+          </div>
           {project.username && (
             <p className="text-xs text-ash mt-0.5">by {project.username}</p>
           )}
