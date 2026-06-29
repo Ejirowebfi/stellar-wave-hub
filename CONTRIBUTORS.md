@@ -45,6 +45,33 @@ Replace `YOUR_GITHUB_USERNAME`, `Your Name`, `YOUR_X_HANDLE`, and the role/contr
       <br />
       <sub>Maintainer — Project creator</sub>
     </td>
+    <div
+        style="display:inline-block;width:130px;vertical-align:top;text-align:center;margin:8px"
+    >
+        <a href="https://github.com/chiggybillionz">
+            <img
+                src="https://github.com/chiggybillionz.png"
+                width="80"
+                style="border-radius:50%"
+                alt="chiggybillionz"
+            />
+            <br />
+            <sub><b>chiggybillionz</b></sub>
+        </a>
+        <br />
+        <a href="https://github.com/chiggybillionz"
+            ><img
+                src="https://img.shields.io/badge/-GitHub-181717?logo=github&logoColor=white&style=flat-square"
+                alt="GitHub"
+        /></a>
+        <a href="https://x.com/chigoziOkorie"
+            ><img
+                src="https://img.shields.io/badge/-X-000000?logo=x&logoColor=white&style=flat-square"
+                alt="X"
+        /></a>
+        <br />
+        <sub>Researcher — Stellar GreenPay</sub>
+    </div>
     <!-- Add your <td> above this line -->
   </tr>
 </table>
