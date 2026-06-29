@@ -475,11 +475,6 @@ Replace `YOUR_GITHUB_USERNAME`, `Your Name`, `YOUR_X_HANDLE`, and the role/proje
 				src="https://avatars.githubusercontent.com/u/174682562?v=4"
 				alt="GitHub"
 		/></a>
-		<!-- <a href="https://x.com/YOUR_X_HANDLE"
-			><img
-				src="https://img.shields.io/badge/-X-000000?logo=x&logoColor=white&style=flat-square"
-				alt="X"
-		/></a> -->
 		<br />
 		<sub>Researcher — StellarMicroPay, Linkora-social, Lancepay, MettaVerse</sub>
 	</div>
@@ -487,15 +482,15 @@ Replace `YOUR_GITHUB_USERNAME`, `Your Name`, `YOUR_X_HANDLE`, and the role/proje
     <div
 	style="display:inline-block;width:130px;vertical-align:top;text-align:center;margin:8px"
 >
-	<a href="https://github.com/YOUR_GITHUB_USERNAME">
+	<a href="https://github.com/Buchi-Einstein">
 		<img
-			src="https://github.com/YOUR_GITHUB_USERNAME.png"
+			src="https://github.com/Buchi-Einstein.png"
 			width="80"
 			style="border-radius:50%"
-			alt="John-Flint"
+			alt="Buchi-Einstein"
 		/>
 		<br />
-		<sub><b>John-Flint</b></sub>
+		<sub><b>Buchi-Einstein</b></sub>
 	</a>
 	<br />
 	<a href="https://github.com/Buchi-Einstein"
@@ -509,7 +504,7 @@ Replace `YOUR_GITHUB_USERNAME`, `Your Name`, `YOUR_X_HANDLE`, and the role/proje
 			alt="X"
 	/></a>
 	<br />
-	<sub>Researcher — Stellar-Search, Vestroll</sub>
+	<sub>Researcher — Vestroll, Stellar-Search</sub>
 </div>
 	<!--Enemuo-Debug-->
 	<div
@@ -520,10 +515,10 @@ Replace `YOUR_GITHUB_USERNAME`, `Your Name`, `YOUR_X_HANDLE`, and the role/proje
 				src="https://github.com/Enemuo-debug.png"
 				width="80"
 				style="border-radius:50%"
-				alt="Your Name"
+				alt="Enemuo"
 			/>
 			<br />
-			<sub><b>Your Name</b></sub>
+			<sub><b>Enemuo</b></sub>
 		</a>
 		<br />
 		<a href="https://github.com/Enemuo-debug"
