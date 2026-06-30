@@ -5,9 +5,9 @@ begin;
 
 -- ─── Projects: completeness predicate ──────────────────────────────────
 -- A project is "substantial" (a real, complete build rather than a thin
--- placeholder submission) when either:
---   1. it has a deployed Soroban smart contract (stellar_contract_id), the
---      primary signal — sufficient on its own; OR
+-- placeholder submission) when it meets BOTH of:
+--   1. it has a deployed Soroban smart contract (stellar_contract_id) —
+--      required, not merely sufficient on its own; AND
 --   2. it meets at least 2 of these 3 secondary completeness markers:
 --       - stellar_account_id is set (on-chain presence)
 --       - github_url is set, or github_repos has at least one entry
@@ -36,7 +36,7 @@ immutable
 as $$
   select
     p_stellar_contract_id is not null
-    or (
+    and (
       (case when p_stellar_account_id is not null then 1 else 0 end) +
       (case when p_github_url is not null
               or jsonb_array_length(coalesce(p_github_repos, '[]'::jsonb)) > 0
