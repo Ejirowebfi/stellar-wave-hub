@@ -8,6 +8,7 @@ export async function GET(request: Request) {
 		const url = new URL(request.url);
 		const category = url.searchParams.get("category");
 		const search = url.searchParams.get("search")?.toLowerCase();
+		const substantial = url.searchParams.get("substantial") === "true";
 		const sort = url.searchParams.get("sort") || "newest";
 		const page = Math.max(1, Number(url.searchParams.get("page")) || 1);
 		const limit = Math.min(
@@ -23,6 +24,10 @@ export async function GET(request: Request) {
 
 		if (category) {
 			query = query.where("category", "==", category);
+		}
+
+		if (substantial) {
+			query = query.where("is_substantial", "==", true);
 		}
 
 		const snap = await query.get();
